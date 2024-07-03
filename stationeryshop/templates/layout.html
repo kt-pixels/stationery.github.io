@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} Default title {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    {% comment %}
+    <link rel="stylesheet" href="../static/style.css" />
+    {% endcomment %}
+  </head>
+  <body>
+    <nav class="navbar">
+      <h2>Kaushik's Stationery Paradise</h2>
+      <ul class="page_links">
+        <li>Home</li>
+        <li><a href="{% url 'add_new_product' %}">Add Products</a></li>
+        <li>Panel</li>
+      </ul>
+    </nav>
+    {% block content %} {% endblock %}
+  </body>
+  {% comment %} <script src="{% static 'script.js' %}"></script> {% endcomment %}
+  {% comment %} <script src="../static/script.js"></script> {% endcomment %}
+</html>

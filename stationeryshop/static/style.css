@@ -1,0 +1,82 @@
+body {
+  background-color: #161616;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20px;
+  background-color: #202020;
+  align-items: center;
+}
+
+.page_links{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.page_links > li{
+    cursor: pointer;
+}
+
+.my_products_links{
+    margin-block: 20px;
+}
+
+.small_cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+.card{
+    width: 261px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    padding-inline: 24px;
+    border-radius: 10px;
+    background-color: orange;
+    font-size: 18px;
+}
+
+.notebooks_section{
+    margin-inline: 20px;
+}
+
+/* All Products ?? Inside The APP */
+
+.all_products_sections{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+}
+
+.fulldata{
+    background-color: #313131;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.fulldata > img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.nb_section_heading{
+    margin-inline: 10px;
+}

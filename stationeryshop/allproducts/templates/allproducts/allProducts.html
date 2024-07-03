@@ -1,0 +1,135 @@
+{% extends "layout.html" %} {% block title %} Note Books {% endblock %} 
+
+{% block content %}
+<div class="nb_section_heading">
+  <h2>Note Book Section</h2>
+  <hr />
+</div>
+
+<div class="all_products_sections">
+
+  {% for allproducts in notebooks %}
+    <div class="fulldata">
+      <img src="{{allproducts.image.url}}" alt="{{allproducts.name}}" />
+      <p class="name">Name: {{allproducts.name}}</p>
+      <p class="price">Price: {{allproducts.price}}</p>
+      <p class="color">Color: {{allproducts.color}}</p>
+      <p class="quantity">Quantity: {{allproducts.quantity}}</p>
+      <p class="edit"><a href="{% url 'update_product' allproducts.id %}">Edit</a></p>
+      <p class="delet"><a href="{% url 'delete_product' allproducts.id %}">Delete</a></p>
+    </div>
+  {% endfor %}
+
+</div>
+
+
+<div class="nb_section_heading">
+  <h2>Pens Section</h2>
+  <hr />
+</div>
+
+<div class="all_products_sections">
+
+  {% for allproducts in pens %}
+    <div class="fulldata">
+      <img src="{{allproducts.image.url}}" alt="{{allproducts.name}}" />
+      <p class="name">Name: {{allproducts.name}}</p>
+      <p class="price">Price: {{allproducts.price}}</p>
+      <p class="color">Color: {{allproducts.color}}</p>
+      <p class="quantity">Quantity: {{allproducts.quantity}}</p>
+      <p class="edit"><a href="{% url 'update_product' allproducts.id %}">Edit</a></p>
+      <p class="delet"><a href="{% url 'delete_product' allproducts.id %}">Delete</a></p>
+    </div>
+  {% endfor %}
+
+</div>
+
+<div class="nb_section_heading">
+  <h2>Pencils Section</h2>
+  <hr />
+</div>
+
+<div class="all_products_sections">
+
+  {% for allproducts in pencils %}
+    <div class="fulldata">
+      <img src="{{allproducts.image.url}}" alt="{{allproducts.name}}" />
+      <p class="name">Name: {{allproducts.name}}</p>
+      <p class="price">Price: {{allproducts.price}}</p>
+      <p class="color">Color: {{allproducts.color}}</p>
+      <p class="quantity">Quantity: {{allproducts.quantity}}</p>
+      <p class="edit"><a href="{% url 'update_product' allproducts.id %}">Edit</a></p>
+      <p class="delet"><a href="{% url 'delete_product' allproducts.id %}">Delete</a></p>
+    </div>
+  {% endfor %}
+
+</div>
+
+
+<div class="nb_section_heading">
+  <h2>Dairy Section</h2>
+  <hr />
+</div>
+
+<div class="all_products_sections">
+
+  {% for allproducts in dairy %}
+    <div class="fulldata">
+      <img src="{{allproducts.image.url}}" alt="{{allproducts.name}}" />
+      <p class="name">Name: {{allproducts.name}}</p>
+      <p class="price">Price: {{allproducts.price}}</p>
+      <p class="color">Color: {{allproducts.color}}</p>
+      <p class="quantity">Quantity: {{allproducts.quantity}}</p>
+      <p class="edit"><a href="{% url 'update_product' allproducts.id %}">Edit</a></p>
+      <p class="delet"><a href="{% url 'delete_product' allproducts.id %}">Delete</a></p>
+    </div>
+  {% endfor %}
+
+</div>
+
+
+<div class="nb_section_heading">
+  <h2>Tape Section</h2>
+  <hr />
+</div>
+
+<div class="all_products_sections">
+
+  {% for allproducts in tape %}
+    <div class="fulldata">
+      <img src="{{allproducts.image.url}}" alt="{{allproducts.name}}" />
+      <p class="name">Name: {{allproducts.name}}</p>
+      <p class="price">Price: {{allproducts.price}}</p>
+      <p class="color">Color: {{allproducts.color}}</p>
+      <p class="quantity">Quantity: {{allproducts.quantity}}</p>
+      <p class="edit"><a href="{% url 'update_product' allproducts.id %}">Edit</a></p>
+      <p class="delet"><a href="{% url 'delete_product' allproducts.id %}">Delete</a></p>
+    </div>
+  {% endfor %}
+
+</div>
+
+
+<div class="nb_section_heading">
+  <h2>Sheets Section</h2>
+  <hr />
+</div>
+
+<div class="all_products_sections">
+
+  {% for allproducts in sheets %}
+    <div class="fulldata">
+      <img src="{{allproducts.image.url}}" alt="{{allproducts.name}}" />
+      <p class="name">Name: {{allproducts.name}}</p>
+      <p class="price">Price: {{allproducts.price}}</p>
+      <p class="color">Color: {{allproducts.color}}</p>
+      <p class="quantity">Quantity: {{allproducts.quantity}}</p>
+      <p class="edit"><a href="{% url 'update_product' allproducts.id %}">Edit</a></p>
+      <p class="delet"><a href="{% url 'delete_product' allproducts.id %}">Delete</a></p>
+    </div>
+  {% endfor %}
+
+</div>
+
+
+{% endblock %}
