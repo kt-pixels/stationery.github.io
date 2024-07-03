@@ -1,1 +1,9 @@
+
+# Ignore venv folder
 .venv/
+
+# Ignore config.ini file
+.config.ini
+
+# Ignore all .pyc files
+*.pyc
